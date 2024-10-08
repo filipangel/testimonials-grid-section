@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--clr-violet: hsl(263, 55%, 52%);
+	--clr-dark-blue: hsl(217, 19%, 35%);
+	--clr-dark-blue: hsl(219, 29%, 14%);
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-light-gray: hsl(0, 0%, 81%);
+	--clr-light-blue: hsl(210, 46%, 95%);
+	--fw-normal: 500;
+	--fw-bold: 600;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.3rem;
+	font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+	padding: 2rem;
+}
+
+.card {
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+img {
+	border-radius: 50%;
+	border: 1px solid;
+	width: 3rem;
+	height: 3rem;
+}
+
+.card .card-header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
+}
+
+.card .card-header h2 {
+	font-size: 1.4rem;
+}
+
+.card .card-header h3 {
+	font-size: 1.3rem;
+	font-weight: var(--fw-normal);
+	opacity: 0.5;
+}
+
+.card:nth-child(1) {
+	background: url(../images/bg-pattern-quotation.svg);
+	background-color: var(--clr-violet);
+	background-position: top 0 right 2rem;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.card:nth-child(1) .card-header {
+	color: var(--clr-light-gray);
+}
+
+.card:nth-child(1) .card-header img {
+	border-color: var(--clr-light-gray);
+}
+
+.card:nth-child(1) h1 {
+	font-size: 2rem;
+	font-weight: var(--fw-normal);
+}
